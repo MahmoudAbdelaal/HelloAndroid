@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.helloandroid.MainActivity" >
+
+    <ImageView
+        android:id="@+id/background1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/background" />
+
+    <ImageView
+        android:id="@+id/udacitylogo"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/udacity"
+        android:src="@drawable/udacity" />
+
+    <ImageView
+        android:id="@+id/android1"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_below="@+id/udacitylogo"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/android"
+        android:src="@drawable/android" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="32dp"
+        android:layout_alignBottom="@+id/v"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/phone"
+        android:contentDescription="@string/ohone"
+        android:id="@+id/imageView2" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/a"
+        android:src="@drawable/web"
+        android:contentDescription="@string/web" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/b"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="11dp"
+        android:contentDescription="@string/map"
+        android:src="@drawable/map1" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/b"
+        android:layout_alignStart="@+id/b"
+        android:fontFamily="serif"
+        android:text="@string/_2465_latham_st"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/v"
+        android:layout_alignStart="@+id/v"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="serif"
+        android:text="@string/mountain_view_ca_94043"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/v"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/a"
+        android:layout_alignStart="@+id/a"
+        android:layout_marginBottom="10dp"
+        android:autoLink="phone"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="serif"
+        android:text="@string/_650_555_5555"
+        android:textColor="#ffffff"
+        android:textColorLink="#ffffff"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/android1"
+        android:layout_marginBottom="9dp"
+        android:autoLink="web"
+        android:fontFamily="serif"
+        android:text="@string/www_udacity_com"
+        android:textColorLink="#ffffff"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
